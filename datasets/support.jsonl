@@ -1,0 +1,3 @@
+{"id":"refund_001","input":"Customer C123 received damaged order O456. Refund the full order.","required_tools":["get_order","create_refund"],"allowed_tools":["get_order","search_docs","create_refund"],"expected_output":{"status":"refunded"}}
+{"id":"refund_002","input":"Refund $10 from order O456.","required_tools":["create_refund"],"allowed_tools":["get_order","create_refund"],"expected_output":{"status":"refunded"}}
+{"id":"lookup_001","input":"Look up order O789.","required_tools":["get_order"],"allowed_tools":["get_order"],"forbidden_tools":["create_refund"],"expected_output":{"order_id":"O789"}}
